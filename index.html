@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="bg-dark text-white text-center">Phone Finder</h1>
+    </header>
+    <div class="input-group mb-3 pt-3 pb-2 w-50 mx-auto">
+        <input type="text" class="form-control" placeholder="Find Your Phone" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="search-addon2">Search</button>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="/images/Apple-iPhone-11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Apple IPhone 11</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="IPhone11()">View Details</button>
+                    <p id="test1"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Apple-iphone-12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Apple Iphone 12</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="IPhone12()">View Details</button>
+                    <p id="test2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Apple-iPhone-13-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Apple IPhone 13</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="IPhone13()">View Details</button>
+                    <p id="test3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="/images/Samsung-Galaxy-M62-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Samsung Galaxy M62</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="GalaxyM62()">View Details</button>
+                    <p id="test4"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Samsung-Galaxy-F22-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Samsung Galaxy F22</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="GalaxyF22()">View Details</button>
+                    <p id="test5"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Samsung-Galaxy-A22-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Samsung Galaxy A22</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="GalaxyA22()">View Details</button>
+                    <p id="test6"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="/images/Xiaomi-11T-Pro-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Xiaomi 11T Pro</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Xiaomi11TPro()">View Details</button>
+                    <p id="test7"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Xiaomi-11T-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Xiaomi 11T</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Xiaomi11T()">View Details</button>
+                    <p id="test8"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Xiaomi-Redmi-10-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Xiaomi Redmi 10</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Redmi10()">View Details</button>
+                    <p id="test9"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="/images/Realme-9i-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Realme 9i</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Realme9i()">View Details</button>
+                    <p id="test10"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Realme-8-5G-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Realme 8</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Realme8()">View Details</button>
+                    <p id="test11"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/images/Realme-C25Y-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Realme C25Y</h5>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="RealmeC25Y()">View Details</button>
+                    <p id="test12"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

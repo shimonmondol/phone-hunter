@@ -1,3 +1,24 @@
+const search = () => {
+    const searchbox = document.getElementById("search-phone").value.toUpperCase();
+    const storeitems = document.getElementById("card-group")
+    const card = document.querySelectorAll(".card")
+    const pname = storeitems.getElementsByTagName("h5")
+
+    for (var i = 0; i < pname.length; i++) {
+        let match = card[i].getElementsByTagName('h5')[0];
+
+        if (match) {
+            let textvalue = match.textContent || match.innerHTML
+
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                card[i].style.display = "";
+            } else {
+                card[i].style.display = "none";
+            }
+        }
+    }
+}
+
 function IPhone11() {
     document.getElementById("test1").innerHTML =
         "Display Size : 6.1 inches, Ram : 4Gb, Storage : 64Gb, Released: 20 September 2019, Price: 87,999 Tk";

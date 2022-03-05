@@ -16,11 +16,10 @@
         <h1 class="bg-dark text-white text-center">Phone Finder</h1>
     </header>
     <div class="input-group mb-3 pt-3 pb-2 w-50 mx-auto">
-        <input type="text" class="form-control" placeholder="Find Your Phone" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="search-addon2">Search</button>
+        <input type="text" class="form-control" id="search-phone" placeholder="Find Your Phone"
+            aria-label="Recipient's username" aria-describedby="button-addon2" onkeyup="search()">
     </div>
-    <div class="card-group">
+    <div class="card-group container-fluid" id="card-group">
         <div class="card">
             <img src="/images/Apple-iPhone-11.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -51,8 +50,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-group">
         <div class="card">
             <img src="/images/Samsung-Galaxy-M62-image.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -83,8 +80,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-group">
         <div class="card">
             <img src="/images/Xiaomi-11T-Pro-image.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -115,8 +110,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-group">
         <div class="card">
             <img src="/images/Realme-9i-image.jpg" class="card-img-top" alt="...">
             <div class="card-body">
